@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: print-hello-word
         run: echo "Hello Word"
+
+      - name: Wait
+        run: sleep 30
