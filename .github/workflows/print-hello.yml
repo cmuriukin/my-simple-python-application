@@ -12,7 +12,7 @@ jobs:
 
       - name: Build
         run: |
-          echo: "Build Docker"
+          echo "Build Docker"
 
       - name: tag
         run: |
