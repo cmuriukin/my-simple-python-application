@@ -20,5 +20,5 @@ jobs:
 
       - name: push
         run: |
-          echo "Docker push
+          echo "Docker push"
         
