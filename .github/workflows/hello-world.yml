@@ -4,7 +4,7 @@ jobs:
   print-hello-world-job:
     runs-on: ubuntu-20.04
     steps:
-      - name: Wiat for 30 seconds
+      - name: Wait for 30 seconds
         run: sleep 30
       - name: Print Hello World
         run: echo "Hello World"
