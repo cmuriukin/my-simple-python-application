@@ -2,7 +2,7 @@ name: Hello World
 on:
   push:
     branches:
-      - feature
+      - class20
 jobs:
   print-hello-world-job:
     runs-on: ubuntu-20.04
