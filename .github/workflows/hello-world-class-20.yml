@@ -1,4 +1,4 @@
-name: Hello World
+name: Hello World class 20
 on:
   push:
     branches:
