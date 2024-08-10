@@ -25,7 +25,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.metadata.outputs.tags }}
+          tags: |
+            cmuriukin/class-20:latest
+            cmuriukin/class-20:${{ steps.metadata.outputs.tags }}
+            cmuriukin/class-20:build-${{ github.GITHUB_RUN_NUMBER }}
           labels: ${{ steps.metadata.outputs.labels }}
         
           
