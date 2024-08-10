@@ -28,7 +28,7 @@ jobs:
           tags: |
             cmuriukin/class-20:latest
             ${{ steps.metadata.outputs.tags }}
-            $GITHUB_RUN_NUMBER
+            ${{GITHUB_RUN_NUMBER}}
           labels: ${{ steps.metadata.outputs.labels }}
           #
         
