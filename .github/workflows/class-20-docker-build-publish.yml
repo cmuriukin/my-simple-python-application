@@ -15,8 +15,18 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Extract Metadata(Tags and Labels)
+        id: metadata
         uses: docker/metadata-action@v5.5.1
         with:
           images: cmuriukin/class-20
+
+      - name: Build and Publish Docker Image
+        uses: docker/build-push-action@v6.6.1
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.metadata.outputs.tags }}
+          labels: ${{ steps.metadata.outputs.labels }}
+        
           
     
