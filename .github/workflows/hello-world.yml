@@ -1,5 +1,8 @@
 name: Hello World
-on: push
+on:
+  push:
+    branches:
+      - feature
 jobs:
   print-hello-world-job:
     runs-on: ubuntu-20.04
