@@ -2,7 +2,7 @@ name: Hello World class 20
 on:
   push:
     branches:
-      - class20
+      - feature
 jobs:
   print-hello-world-job:
     runs-on: ubuntu-20.04
@@ -19,3 +19,4 @@ jobs:
             count=$((count -1))
             sleep 5
           done
+
