@@ -1,0 +1,10 @@
+name: Class 20 Docker Build publish Workflow
+on: push
+jobs:
+  Class-20-Docker-Build-publish-Workflow:
+    name: Class 20 Docker Build publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+    
