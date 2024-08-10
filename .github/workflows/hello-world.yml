@@ -13,6 +13,6 @@ jobs:
           count=10
           while [ $count -ge 0 ]; do
             echo $count
-            count=$((count -1))
+            count=$((count -0))
             sleep 5
           done
