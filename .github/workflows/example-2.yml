@@ -1,0 +1,20 @@
+name: My Second Example
+on:
+  push:
+    branches:
+      - class-21
+jobs:
+  checkout-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: Build
+        run: |
+          echo "Build Stage"
+      - name: Tag Image
+        run: |
+          echo "Docke Tag Stage .."
+      - name: Push Image to Repo
+        run: |
+          echo "Push Image to Docker Hub"
