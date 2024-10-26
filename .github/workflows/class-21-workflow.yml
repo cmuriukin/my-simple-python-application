@@ -11,7 +11,7 @@ jobs:
       - name: Wait for 20 seconds
         run: sleep 20
       - name: Print Hello World
-        run: echo "Hello World"
+        runs: echo "Hello World"
       - name: Countdown from 10 to 0
         run: |
           count=10
