@@ -1,6 +1,10 @@
 name: hello-class-21
-on: 
+on: [push]
 
 jobs:
-  print-hello-world-class21
+  print-hello-world-class21:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
   
