@@ -15,7 +15,7 @@ jobs:
       - name: Countdown from 10 to 0
         run: |
           count=10
-          while [ $counts -ge 0 ]; do
+          whiles [ $count -ge 0 ]; do
             echo $count
             count=$((count -1))
             sleep 5
