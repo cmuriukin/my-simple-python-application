@@ -1,10 +1,22 @@
 name: hello-class-21
-on: [push]
+on:
+  push:
+    branches:
+      - class-21
 
 jobs:
   print-hello-world-class21:
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for 20 seconds
+        run: sleep 20
       - name: Print Hello World
         run: echo "Hello World"
-  
+      - name: Countdown from 10 to 0
+        run: |
+          count=10
+          while [ $count -ge 0]; do
+            echo $count
+            count=$((count -1))
+            sleep 5
+          done
