@@ -1,10 +1,10 @@
-name: My Second Example
+name: Docker Build Deploy
 on:
   push:
     branches:
       - class-21
 jobs:
-  checkout-repo:
+  Docker-Build-Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,7 +17,16 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
             
       - name: Docker Metadata action
+        id: metadata
         uses: docker/metadata-action@v5.5.1
         with:
           images: cmuriukin/class-21-repo
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v6.9.0
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.metadata.outputs.tags }}
+      
       
