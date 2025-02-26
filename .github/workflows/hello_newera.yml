@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: My first hello world
-        run:  echo "Hellow World"
+        run:  sleep 3600
+      - name: My first hello world
+        run:  echo "Hello New Era"
+        
+        
