@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 # COPY --from=builder /code /code/
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-EXPOSE 5000
+EXPOSE 5001
 COPY . .
 CMD ["flask", "run"]
