@@ -1,9 +1,9 @@
-name: class_22_docker_action
+name: docker_action_22
 on: [push]
 
 jobs:
-  class_22_docker_action:
-    name: Push Docker image to Registry
+  docker_action_22:
+    name: docker action 22
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
